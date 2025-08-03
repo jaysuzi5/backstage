@@ -41,10 +41,14 @@ catalog:
       target: /app/entities/groups.yaml
       rules:
         - allow: [Group]
-    - type: github-discovery
-      target: https://github.com/jaysuzi5/backstage-software-templates
+    - type: url
+      target: https://github.com/jaysuzi5/backstage-software-templates/blob/main/python/flask/template.yaml
       rules:
-        - allow: [Template]        
+        - allow: [Template]
+    - type: url
+      target: https://github.com/jaysuzi5/backstage-software-templates/blob/main/python/fastAPI/template.yaml
+      rules:
+        - allow: [Template]
 
 techdocs:
   builder: 'local'
