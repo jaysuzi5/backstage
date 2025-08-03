@@ -16,10 +16,12 @@ This is based on the Udemy Course [From DevOps to Platform Engineering: Master B
 From the directory with app-config.yaml and Dockerfile run:
 
 ```bash
-docker build -t backstage:v4 .
-docker tag backstage:v4 jaysuzi5/backstage:v4
-docker login
-docker push jaysuzi5/backstage:v4
+docker buildx create --use --name multiarch-builder || docker buildx use multiarch-builder
+
+docker buildx build \
+  --platform linux/amd64,linux/arm64 \
+  -t jaysuzi5/backstage:v4 \
+  --push .
 ```
 Adjust the version accordingly
 
