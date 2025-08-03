@@ -1,0 +1,21 @@
+apiVersion: v1
+data:
+  AUTH_GITHUB_CLIENT_ID: T3YyM2xpYjc5ODJlY0JyWXR4OHcK
+  AUTH_GITHUB_CLIENT_SECRET: NTdmZTY2OTBiOTUyNTk2MjQxNjNkMGI2MTFmM2RhOTYwZjE2OWJkNwo=
+  GITHUB_TOKEN: Z2hwX1NPeFZBSHo1QUh2MTJ5YVR0VGdIZTNKUlYwTkZvQzJlckZoawo=
+  POSTGRES_PASSWORD: Qm81dG9ucmVkNW94IQ==
+  POSTGRES_USER: amN1cnRpcw==
+kind: Secret
+metadata:
+  creationTimestamp: "2025-07-27T20:44:12Z"
+  name: backstage-secrets
+  namespace: backstage
+  ownerReferences:
+  - apiVersion: bitnami.com/v1alpha1
+    controller: true
+    kind: SealedSecret
+    name: backstage-secrets
+    uid: 99523a97-6ae4-4141-acf5-abffcc79c5d2
+  resourceVersion: "43311294"
+  uid: f5ba2858-1f9f-4447-a8d6-02415fcad5e8
+type: Opaque
