@@ -22,3 +22,6 @@ docker login
 docker push jaysuzi5/backstage:v4
 ```
 Adjust the version accordingly
+
+## Deploying to Kubernetes
+See home-lab project specifically the infrastructure/backsage/README.md file for more information.
