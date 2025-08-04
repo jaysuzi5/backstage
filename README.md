@@ -12,10 +12,23 @@ yarn start
 # Custom Image
 This is based on the Udemy Course [From DevOps to Platform Engineering: Master Backstage & IDPs](https://www.udemy.com/course/from-devops-to-platform-engineering-master-backstage-idps/?utm_campaign=email&utm_medium=email&utm_source=sendgrid.com)
 
+## Build Front End
+```bash
+cd packages/app
+yarn build
+```
+
+## Build Back End
+```bash
+cd ../backend
+yarn build
+```
+
 ## Creating an updated Docker Image
 From the directory with app-config.yaml and Dockerfile run:
 
 ```bash
+cd ../..
 docker build --platform linux/amd64 -t jaysuzi5/backstage:v4 .
 docker login
 docker push jaysuzi5/backstage:v4
