@@ -42,13 +42,9 @@ catalog:
       rules:
         - allow: [Group]
     - type: url
-      target: https://github.com/jaysuzi5/backstage-software-templates/blob/main/python/flask/template.yaml
+      target: https://github.com/jaysuzi5/backstage-software-templates/blob/main/catalog-info.yaml
       rules:
-        - allow: [Template]
-    - type: url
-      target: https://github.com/jaysuzi5/backstage-software-templates/blob/main/python/fastAPI/template.yaml
-      rules:
-        - allow: [Template]
+        - allow: [Location, Template]
 
 techdocs:
   builder: 'local'
